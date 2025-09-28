@@ -35,7 +35,7 @@ struct pass {
     char username[50];
     int date, month, year;
     char pnumber[15];
-    char adharnum[20];
+    char idnum[20];
     char fname[20];
     char lname[20];
     char fathname[20];
@@ -56,7 +56,6 @@ int main() {
 
     printf("WELCOME TO BANK ACCOUNT SYSTEM\n\n");
     printf("**********************************\n");
-    printf("DEVELOPER - Naman Kumar\n\n");
 
     printf("1.... CREATE A BANK ACCOUNT\n");
     printf("2.... ALREADY A USER? SIGN IN\n");
@@ -105,7 +104,7 @@ void account(void) {
     printf("ADDRESS: "); scanf("%s", u1.address);
     printf("ACCOUNT TYPE: "); scanf("%s", u1.typeaccount);
     printf("DATE OF BIRTH (DD MM YYYY): "); scanf("%d %d %d", &u1.date, &u1.month, &u1.year);
-    printf("ADHAR NUMBER: "); scanf("%s", u1.adharnum);
+    printf("ID NUMBER: "); scanf("%s", u1.idnum);
     printf("PHONE NUMBER: "); scanf("%s", u1.pnumber);
     printf("USERNAME: "); scanf("%s", u1.username);
 
