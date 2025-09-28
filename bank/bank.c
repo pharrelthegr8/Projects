@@ -1,5 +1,5 @@
 
-// Linux-friendly Banking System in C
+// Banking System in C
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,7 +15,7 @@ void account(void);
 void accountcreated(void);
 void logout(void);
 
-// Function to get a single character without enter (Linux)
+// Function to get a single character without enter
 char getch_linux() {
     char buf = 0;
     struct termios old = {0};
