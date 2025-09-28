@@ -1,0 +1,42 @@
+
+# Ignore compiled binaries
+*.out
+*.exe
+*.dll
+*.so
+*.o
+*.a
+
+# Ignore text files
+*.txt
+
+# Ignore logs and debugging files
+*.log
+*.stackdump
+
+# Ignore core dumps
+core
+
+# Ignore editor/OS generated files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore build directories
+/build/
+/bin/
+/obj/
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore Python virtual envs (if used alongside tooling)
+.venv/
+env/
+
+# Ignore package manager files (if they show up)
+node_modules/
