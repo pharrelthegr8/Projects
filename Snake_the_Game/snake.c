@@ -1,6 +1,5 @@
 
-// Portable Snake Game in C (no conio.h)
-// Works on Linux/macOS/Windows (with MinGW/MSVC)
+// Portable Snake Game in C
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +7,7 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#include <conio.h> // MSVC still has this
+#include <conio.h>
 #else
 #include <unistd.h>
 #include <termios.h>
@@ -29,9 +28,9 @@ int x, y, fruitx, fruity;
     #define CLEAR "clear"
 #endif
 
-// ------------ Input Handling (Portable) ----------------
+// ------------ Input Handling ----------------
 #ifndef _WIN32
-// Enable raw terminal mode (Linux/macOS)
+// Enable terminal mode
 void enableRawMode() {
     struct termios t;
     tcgetattr(STDIN_FILENO, &t);
